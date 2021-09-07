@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: #fff;
+}
+.logo{
+    cursor: pointer;
+    width: 100px;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-links li a:hover{
+    color: #1C419E;
+}
+nav #icon{
+    color: #000;
+    font-size: 30px;
+    line-height: 80px;
+    float: left;
+    margin-right: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+h2{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*----------PERFILES---------*/
+.perfiles, h2 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+  }
+  
+  to {
+      margin-left: 0%;
+      width: 100%;
+  }
+}
+.perfiles{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.perfil{
+    width: 20%;
+    height: 500px;
+    background-color: #50597b;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.perfil div img{
+    display: flex;
+    width: 225px;
+    margin: 0 auto;
+    height: 225px;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.perfil h4{
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+.perfil p{
+    text-align: center;
+    color: #f2f2f2;
+}
+.iconos-creadores{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.iconos-creadores ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.iconos-creadores ul li{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background: #fff;
+}
+#facebook{
+    background: #3B5998;
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    border-radius: 100%;
+}
+#instagram{
+    background: #DD2A7B;
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    border-radius: 100%;
+}
+#whatsapp{
+    background: #25D366;
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+    border-radius: 100%;
+}
+.iconos-creadores ul li a{
+    color: #fff;
+    font-size: 30px;
+}
+.iconos-creadores ul li a i{
+    line-height: 50px;
+}
+/*----------FOOTER----------*/
+.footer-contenedor{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+    position: sticky;
+    top: 100%;
+}
+.footer-iconos{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-iconos ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-iconos ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px; 
+    border-radius: 100%;
+    background: #1C419E;
+}
+.footer-iconos ul li a{
+    color: #fff;
+    font-size: 30px;
+}
+.footer-iconos ul li a i{
+    line-height: 50px;
+}
+.footer-menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-menu ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.footer-menu ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.footer-bottom p{
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1320px){
+    .nav-links ul{
+        margin-right: 5px;
+    }
+    .nav-links li a{
+        font-size: 17px;
+        padding: 7px 5px;
+    }
+    .perfil{
+        width: 18%;
+        margin: 0 auto;
+        height: 500px;
+    }
+    .perfil div img{
+        display: flex;
+        width: 175px;
+        margin: 0 auto;
+        height: 175px;
+        border-radius: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .perfil h4{
+        text-align: center;
+        color: #f2f2f2;
+        font-size: 22px;
+    }
+    .perfil p{
+        text-align: center;
+        font-size: 15px;
+        color: #f2f2f2;
+    }
+}
+
+@media (max-width: 1285px){
+    nav ul{
+        margin-right: 0px;
+    }
+    .nav-links li a{
+        font-size: 17px;
+        padding: 7px 0;
+    }
+    .perfil{
+        width: 19.5%;
+        margin: 0 auto;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1125px){
+    nav #icon{
+      display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f9f9f9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+.nav-links li{
+    display: block;
+    margin: 35px 0;
+}
+.img-section{
+    height: 300px;
+}
+nav ul.show{
+  left: 0;
+}
+.perfiles{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.perfil{
+   width: 70%;
+   margin: 0 auto;
+   height: 500px;
+}
+.perfil div img{
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    height: 250px;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.perfil h4{
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 22px;
+}
+.perfil p{
+    text-align: center;
+    font-size: 18px;
+    color: #f2f2f2;
+}
+}
+@media (max-width: 720px){
+    .section{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 0;
+        height: 30vh;
+    }    
+    .card div a{
+        font-size: 14px;
+    }
+    .perfil{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px){
+    .img-section{
+        height: 200px;
+    } 
+    .cards{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card{    
+        display: flex;
+        justify-content: center;
+        justify-items: center; 
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .card div a{
+        font-size: 12px;
+    }   
+    .perfil p{
+        text-align: center;
+        font-size: 14px;
+        color: #f2f2f2;
+    }
+}
+@media (max-width: 550px){
+    .section{
+        height: 20vh;
+        background-size: cover;
+    }
+    .img-section{
+        height: 150px;
+    }
+    .perfil{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 430px){
+    .footer-menu ul li{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
+    .perfil{
+        width: 80%;
+        margin: 0 auto;
+        height: 500px;
+    }
+}

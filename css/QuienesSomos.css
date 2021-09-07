@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    background-image:linear-gradient(rgb(45, 78, 226),rgba(45, 78, 226, 0.712));
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: #fff;
+}
+.logo{
+    cursor: pointer;
+    width: 100px;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-links li a:hover{
+    color: #1C419E;
+}
+nav #icon{
+    color: #000;
+    font-size: 30px;
+    line-height: 80px;
+    float: left;
+    margin-right: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*RESPONSIVE*/
+@media (max-width: 1320px){
+    .nav-links ul{
+        margin-right: 5px;
+    }
+    .nav-links li a{
+        font-size: 17px;
+        padding: 7px 5px;
+    }
+    #carouselExampleCaptions{
+        z-index: -1; 
+    }
+    .logo{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1285px){
+    nav ul{
+        margin-right: 0px;
+    }
+    .nav-links li a{
+        font-size: 17px;
+        padding: 7px 0;
+    }
+    #carouselExampleCaptions{
+        z-index: -1; 
+    }
+    .logo{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1125px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f9f9;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav-links li{
+        display: block;
+        margin: 35px 0;
+    }
+    .img-section{
+        height: 300px;
+    }
+    nav ul.show{
+        left: 0;
+    }
+    #carouselExampleCaptions{
+        z-index: -1; 
+    }
+    .logo{
+        visibility: hidden;
+    }
+}
+/*carrusel*/
+.carousel-item::before{
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+    background: #000;
+    opacity: 0.7; 
+}
+.carousel-caption{
+    bottom: 180px;
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+.carousel-caption h5{
+    font-size: 100px; 
+}
+.tituloPrincipal1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+.tituloPrincipal2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+.fincades{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 150%;
+}
+table{
+    width: 90%;
+    text-align: center;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 110% ;
+}
+th{
+    background: rgb(30, 153, 40);
+    color: white;
+}
+th, td{
+    width: 25%;
+    vertical-align: top;
+    padding: 0.3em;
+    caption-side: bottom;
+    padding: 10px;
+}
+#numeral{
+    width: 2%;
+}
+#dato{
+    width: 15%;
+}
+#dato2{
+    width: 5%;
+}
+#dato3{
+    width: 5%;
+}
+.mapa{
+    margin-top: 5%;
+    left: 0;
+    width: 100% !important;
+}
+#titulofinal{
+    font-size: 700%; 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 50vh;
+    margin-top: 10%;
+}
+#titulofinal:hover{
+    color:rgb(30, 153, 40);
+    transition: 1s ease-in;
+}
+@media only screen and (max-width: 800px) {
+    #titulofinal{
+        font-size: 500%; 
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    table{
+        width: 60%;
+        text-align: center;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto; 
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-size: 90% ;
+    }
+    .tituloPrincipal1{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 150%;
+    }
+    .tituloPrincipal2{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 150%;
+    }
+    #titulofinal{
+        font-size: 400%; 
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #titulofinal{
+        font-size: 400%; 
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #titulofinal{
+        font-size: 300%; 
+        text-align: center;
+        height: 20vh;
+        margin-top: 5%;
+    }
+}
+/*----------FOOTER----------*/
+.footer-contenedor{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+    padding: 20px 0px;
+    margin-top: 5%;
+}
+.footer-iconos{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-iconos ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-iconos ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px; 
+    border-radius: 100%;
+    background: #1C419E;
+}
+.footer-iconos ul li a{
+    color: #fff;
+    font-size: 30px;
+}
+.footer-iconos ul li a i{
+    line-height: 50px;
+}
+.footer-menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-menu ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.footer-menu ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+.footer-bottom p{
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+@media (max-width: 430px){
+    .footer-menu ul li{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
+}
